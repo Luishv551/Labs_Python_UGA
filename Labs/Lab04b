@@ -1,0 +1,19 @@
+num = float(input("Please insert a number, minutes:\n"))
+days = 1.5
+hours = 1.5
+
+        days = num // 1440
+        if days < 1:
+            print('0 Days\n')
+        else:
+            num = num % 1440
+            print(f'{days} days\n')
+
+        hours = num // 60
+        if hours < 1:
+            print('0 Hours\n')
+        else:
+            num = num % 60
+            print(f'{hours} hours\n')
+            print(f'{num} minutes')
+
